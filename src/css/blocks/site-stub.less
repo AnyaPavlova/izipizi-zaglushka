@@ -1,0 +1,119 @@
+.site-stub {
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+
+  @media screen and (max-width: 670px) {
+    flex-direction: column;
+  }
+
+  &__inner {
+    background-color: #ffffff;
+
+    @media screen and (max-width: 670px) {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    &:after {
+
+      @media screen and (max-width: 670px)  {
+        display: none;
+      }
+    }
+  }
+  &__logo-block {
+    position: absolute;
+    top: 50px;
+    left: 70px;
+    display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    z-index: 5;
+
+    @media screen and (max-width: 670px) {
+      position: relative;
+      top: auto;
+      left: auto;
+      padding: 35px 25px 0;
+    }
+  }
+  &__logo-text {
+    margin-left: 20px;
+    max-width: 225px;
+    line-height: 1.2;
+    margin-top: -3px;
+    font-weight: 500;
+    position: relative;
+    z-index: 5;
+
+    // @media screen and (max-width: 670px) {
+    //   font-size: 11px;
+    // }
+  }
+  &__welcome {
+    position: absolute;
+    left: 70px;
+    top: 185px;
+
+    font-family: 'FranklinGothicMediumCond', sans-serif;
+    font-size: 48px;
+    text-transform: uppercase;
+    line-height: 1.2;
+
+    max-width: 410px;
+    z-index: 5;
+
+    @media screen and (max-width: 960px) {
+      top: 125px;
+    }
+
+    @media screen and (max-width: 670px) {
+      position: relative;
+      top: auto;
+      left: auto;
+      padding: 0 25px 0;
+      font-size: 33px;
+    }
+
+    span {
+      font-weight: 700;
+      font-family: 'InterstateRegularCond', sans-serif;
+    }    
+  }
+  &__konik {
+    position: absolute;
+    right: 0;
+    padding-right: 20px;
+    width: 285px;
+    bottom: 25px;
+
+    @media screen and (max-width: 670px) {
+      position: relative;
+      bottom: auto;
+      right: auto;
+      padding: 0 25px 35px;
+      width: 100%;
+    }
+  }
+  &__konik-logo {
+    margin-bottom: 13px;
+  }
+  &__konik-text {
+    font-size: 12px;
+    color: #596876;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+  &__bg {
+    display: none;
+
+    @media screen and (max-width: 1024px) {
+      display: block;
+    }
+  }
+}

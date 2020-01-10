@@ -1,0 +1,51 @@
+.izipizi-bg {
+  display: block;
+  position: relative;
+  width: 1024px;
+  height: 0;
+  padding-bottom: 58.8%;
+  background-color: #ffffff;
+
+  @media screen and (max-width: 1024px) {
+    display: none;
+  }
+
+  &__item {
+    position: absolute;
+    transition: all 0.5s;
+
+    &:hover {
+      transform: scale(1.2) translateZ(0);
+    }
+  }
+  &__container {
+    overflow: hidden;
+    position: absolute;
+
+    &--1 {
+      width: 400px;
+      height: 289px;
+      left: 0;
+      bottom: 0;
+      z-index: 2;
+    }
+    &--2 {
+      width: 291px;
+      height: 436px;
+      left: 367px;
+      bottom: 0;
+    }
+    &--3 {
+      width: 203px;
+      height: 306px;
+      right: 261px;
+      top: 0;
+    }
+    &--4 {
+      width: 286px;
+      height: 464px;
+      right: 0;
+      top: 0;
+    }
+  }
+}
